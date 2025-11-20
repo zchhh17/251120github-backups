@@ -1,0 +1,18 @@
+{
+  "author": "jy02739245",
+  "project": "workers-vless",
+  "branch": "perf-cloudflare-snippets-youtube-4k-optimization",
+  "timestamp": "20251120-164331",
+  "commit": "56a4acb380a6d155304f6a953f43c13ad3238a3b",
+  "message": "perf(worker): optimize websocket stream performance for high-bandwidth scenarios
+
+Improve websocket throughput for large flows (e.g., 4K video) by introducing micro-batching and protocol header handling optimizations.
+
+- Implement small-chunk coalescing and timer-based flush in pipeRemoteToWS to reduce frame overhead and lower CPU usage under load
+- Adapted flush behavior: immediate flush for large chunks; time/depth-limited batching for small chunks
+- Ensured websocket protocol selection header is echoed for better compatibility
+
+These changes reduce message fragmentation and better utilize available bandwidth, which is especially important for high-throughput environments like YouTube 4K relaying on Cloudflare Workers.
+No breaking changes for clients are expected.",
+  "source": "jy02739245/workers-vless"
+}
