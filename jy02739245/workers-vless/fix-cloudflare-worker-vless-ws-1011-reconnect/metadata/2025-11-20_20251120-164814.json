@@ -1,0 +1,21 @@
+{
+  "author": "jy02739245",
+  "project": "workers-vless",
+  "branch": "fix-cloudflare-worker-vless-ws-1011-reconnect",
+  "timestamp": "20251120-164814",
+  "commit": "312226702ddf3ee4a2821dff29974b7ead20febb",
+  "message": "fix(worker): improve websocket reconnection and error handling for stability
+
+Fixes frequent WebSocket 1011 errors caused by reconnection logic and
+data buffering issues in the Cloudflare Workers VLESS implementation.
+
+- Unifies data handling to always use Uint8Array for socket writes
+- Improves reconnection logic to use status 1000 (normal close) instead
+  of 1011 (internal error), with proper state checks
+- Removes unnecessary buffering and retransmission during reconnections
+- Adds safer error handling, refined timers and backoff delay
+
+These changes reduce internal error disconnects and significantly
+improve connection reliability with v2rayN clients.",
+  "source": "jy02739245/workers-vless"
+}
