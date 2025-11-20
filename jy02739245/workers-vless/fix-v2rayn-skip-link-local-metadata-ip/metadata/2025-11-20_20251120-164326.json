@@ -1,0 +1,11 @@
+{
+  "author": "jy02739245",
+  "project": "workers-vless",
+  "branch": "fix-v2rayn-skip-link-local-metadata-ip",
+  "timestamp": "20251120-164326",
+  "commit": "1eb7eb2ce3f8d1da4180dcde05e7acce2566ccc4",
+  "message": "fix(core): block link-local addresses to prevent metadata server connection errors
+
+Prevent outbound connections to link-local addresses such as 169.254.0.0/16 and fe80::/10 to avoid accidental requests to cloud provider metadata servers. This resolves errors seen in v2rayN and improves security by protecting sensitive local endpoints from exposure. The change introduces an explicit check in the handshake process to immediately reject such connections, reducing error spam and unnecessary reconnection attempts in the log.",
+  "source": "jy02739245/workers-vless"
+}
