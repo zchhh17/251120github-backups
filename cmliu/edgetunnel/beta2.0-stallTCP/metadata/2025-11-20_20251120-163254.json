@@ -1,0 +1,9 @@
+{
+  "author": "cmliu",
+  "project": "edgetunnel",
+  "branch": "beta2.0-stallTCP",
+  "timestamp": "20251120-163254",
+  "commit": "974deb44a847caa07eb7f9a122ad286198701855",
+  "message": "fix: 添加TLS分片参数支持，优化优选订阅生成逻辑",
+  "source": "cmliu/edgetunnel"
+}
