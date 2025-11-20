@@ -1,0 +1,21 @@
+{
+  "author": "jy02739245",
+  "project": "workers-vless",
+  "branch": "perf-optimize-cloudflare-workers-latest-code",
+  "timestamp": "20251120-164823",
+  "commit": "d515554e84ec071ea2207a0f6fefa4b02f77ecd6",
+  "message": "perf(worker): optimize performance for websocket stream handling and reduce allocations
+
+This change improves execution speed and memory usage for websocket
+proxy connections on Cloudflare Workers by minimizing unnecessary object
+allocations and stream writer handling. Key improvements include:
+
+- Pre-compute UUID bytes for faster and lighter ID validation on every packet
+- Reuse TextEncoder/TextDecoder instances and avoid per-request allocations
+- Correctly manage release and reuse of stream writers for outbound and UDP flows
+- Streamline header/payload concatenation in both TCP and UDP response paths
+- Ensure `getOrder()` always returns array for proper iteration
+
+Users can expect better throughput and lower latency, especially under load. No breaking changes.",
+  "source": "jy02739245/workers-vless"
+}
