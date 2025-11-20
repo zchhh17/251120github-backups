@@ -1,0 +1,9 @@
+{
+  "author": "cmliu",
+  "project": "edgetunnel",
+  "branch": "beta2.0",
+  "timestamp": "20251120-164743",
+  "commit": "74d6de95aa810c1b4c7751affa3f35796f6dbeea",
+  "message": "fix: 优化节点路径生成逻辑，修复0RTT启用时路径拼接问题",
+  "source": "cmliu/edgetunnel"
+}
