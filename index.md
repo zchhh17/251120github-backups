@@ -12,3 +12,10 @@
   - META: [2025-11-21_20251121-103912.json](duquancai/cf-vless-st/SS1.0/metadata/2025-11-21_20251121-103912.json)
   - Commit: `920c3006667a49a853638c86acff7f5a492cc5fd`
 
+- beta：无更新（跳过）
+- **main**
+  - ZIP: [2025-11-21_20251121-103916.zip](duquancai/cf-vless-st/main/backups/2025-11-21_20251121-103916.zip)
+  - SHA256: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - META: [2025-11-21_20251121-103916.json](duquancai/cf-vless-st/main/metadata/2025-11-21_20251121-103916.json)
+  - Commit: `c2c9dec25149262e82161e5d2a4f754b541d3870`
+
