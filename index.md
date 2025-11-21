@@ -19,3 +19,9 @@
   - META: [2025-11-21_20251121-103916.json](duquancai/cf-vless-st/main/metadata/2025-11-21_20251121-103916.json)
   - Commit: `c2c9dec25149262e82161e5d2a4f754b541d3870`
 
+- **main**
+  - ZIP: [2025-11-21_20251121-103916.zip](eooce/Cloudflare-proxy/main/backups/2025-11-21_20251121-103916.zip)
+  - SHA256: `c8177721b5c20629ed5b89f6633ccaf3236e03bba382f47e14ed88f45f8b4922`
+  - META: [2025-11-21_20251121-103916.json](eooce/Cloudflare-proxy/main/metadata/2025-11-21_20251121-103916.json)
+  - Commit: `0dc48597d5c1d91dbc0e7671121075ba11d8138b`
+
